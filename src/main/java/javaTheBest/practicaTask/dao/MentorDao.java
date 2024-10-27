@@ -1,4 +1,4 @@
-package javaTheBest.practicaTask.service;
+package javaTheBest.practicaTask.dao;
 
 import javaTheBest.practicaTask.entity.Course;
 import javaTheBest.practicaTask.entity.Lesson;
@@ -8,8 +8,10 @@ import javaTheBest.practicaTask.entity.Student;
 import java.util.List;
 import java.util.Map;
 
-public interface MentorService {
+public interface MentorDao {
+    // TODO Crud
     Mentor getMentorById(Long mentorId);
+
 
     String updateMentor(Long mentorId, Mentor newMentor);
 
