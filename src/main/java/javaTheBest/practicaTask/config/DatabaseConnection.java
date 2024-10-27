@@ -1,5 +1,6 @@
 package javaTheBest.practicaTask.config;
 
+import jakarta.persistence.EntityManagerFactory;
 import javaTheBest.practicaTask.entity.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -7,7 +8,7 @@ import org.hibernate.cfg.Environment;
 import java.util.Properties;
 
 public class DatabaseConnection {
-    public static SessionFactory getSessionFactory() {
+    public static EntityManagerFactory getEntityManager() {
         Properties properties = new Properties();
         properties.put(Environment.JAKARTA_JDBC_URL, "jdbc:postgresql://localhost:5432/postgres");
         properties.put(Environment.JAKARTA_JDBC_USER, "postgres");

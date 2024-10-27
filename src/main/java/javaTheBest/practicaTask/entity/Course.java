@@ -31,4 +31,9 @@ public class Course {
     @OneToMany(mappedBy = "courses")
     private List<Lesson> lessons;
 
+    public Course(String name, LocalDate dateOfStart, int price) {
+        this.name = name;
+        this.dateOfStart = dateOfStart;
+        this.price = price;
+    }
 }

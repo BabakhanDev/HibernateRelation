@@ -1,13 +1,12 @@
-package javaTheBest.practicaTask.service;
+package javaTheBest.practicaTask.dao;
 
-import javaTheBest.practicaTask.entity.Course;
 import javaTheBest.practicaTask.entity.Lesson;
 
 import java.util.List;
 
-public interface LessonService {
-
-
+public interface LesonDao {
+    // TODO crud
+    String saveLessonToCourse(Long courseId, Lesson lesson);
     Lesson getLessonById(Long lessonId);
 
     String updateLesson(Long lessonId, Lesson newLesson);
@@ -16,8 +15,8 @@ public interface LessonService {
 
     List<Lesson> getAllLessons();
 
-
     //    Dop methods
     String deleteLessonByCourseId(Long courseId,Long lessonId);
     List<Lesson> sortLessonByPublishedDate();
+
 }
